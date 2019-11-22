@@ -252,3 +252,25 @@ h5{
   height: 375px;
   width: 60%;
 }
+
+.slot-form-container{
+  width: 40%;
+  margin-top: 18px;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.slot-form-container label{
+  line-height: 15px;
+  margin: 5px;
+}
+
+.slot-form-container input , select {
+  height: 20px;
+  outline: none;
+  padding: 3px;
+  width: 100%;
+}

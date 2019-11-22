@@ -1,4 +1,4 @@
-<!-- Pen023-Guided exercise - IronSkydive 📦 - Box model -->
+<!-- Guided exercise - IronSkydive ✅ - forms -->
 
 <!DOCTYPE html>
 <html lang="pt">
@@ -10,11 +10,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-
-
 <body>
-
-
+<!------------------------------ NAV ------------------------------>
   <nav class="nav-bar">
     <ul class="nav-bar-ul">
      
@@ -25,7 +22,7 @@
     </ul>
   </nav>
 
-
+<!------------------------------ HEADER ------------------------------>
   <header class = "header">
     <h1><img src="https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-logo.png" alt="IronSkydive Logo">IronSkydive</h1>
       <h2>Let the trip begin</h2>
@@ -35,7 +32,7 @@
     </aside>
   </header>
 
-
+<!------------------------------ SECTION 1 ------------------------------>
   <section id="general-information" class = "dark-background text">
     <article class="container">
       <h3>Hello!</h3>
@@ -54,7 +51,7 @@
     </article>
   </section>
 
-
+<!------------------------------ SECTION 2 ------------------------------>
   <section id="structure" class="container">
     <h3>How do we structure the day?</h3>
     <div>
@@ -81,7 +78,7 @@
     </div>
   </section>
 
-
+<!------------------------------ SECTION 3 ------------------------------>
   <section id="team" class="dark-background">
     
     <h3>Team</h3>
@@ -105,7 +102,7 @@
 
   </section>
 
-
+<!------------------------------ SECTION 4 ------------------------------>
   <section id="schedule" class = "container">
     <h3>Schedule</h3>
       <table class = "schedule-table" cellpadding= "0" cellspacing="0">
@@ -152,10 +149,35 @@
 
       </table>
     <h3>Schedule a Time Slot</h3>
+    <form action="/register" method="post" class="slot-form">
+      <div class="slot-form-container">
+        <label for="Email">Email</label> 
+        <input type="email" id="email" placeholder="Enter your email"> 
+      </div>
+      <div class="slot-form-container">
+        <label for="participants">Number of participants</label> 
+        <input type="number" id="participants" placeholder="Number of participants"> 
+      </div>
+      <div class="slot-form-container">
+          <label for="date">Date</label> 
+          <input type="date" id="date" placeholder=""> 
+      </div>
+      <div class="slot-form-container">
+        <label for="time">Time</label> 
+        <select name="time">
+          <option value="early">9:00 - 11:00</option>
+          <option value="mid">12:00 - 14:00</option>
+          <option value="late">15:00 - 17:00</option>
+        </select>
+      </div>
+      <div class="slot-form-container">
+          <input type="submit" value="Reserve Your Slot!">
+      </div>
+    </form>
   </section>
 
-
-  <footer class="dark-background footer">
+<!------------------------------ FOOTER ------------------------------> 
+<footer class="dark-background footer">
     <section>
     <h5>Contact Information</h5>
     <address class="address">IronSkydivebr <br> 33 Rue la Fayette, <br> 75009 Paris, <br> France <br> +33 (0) 619 193 088</address>
