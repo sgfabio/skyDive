@@ -66,12 +66,16 @@ h5{
   background-size: cover;
   height: 650px;
   padding-top: 50px;
+  position: relative;
 }
 
 
 .quote {
   font-size: 2.5em;
   line-height: 0.5em;
+  position: absolute;
+  left: 10%;
+  bottom: 100px;
 }
 
 .dark-background {
@@ -94,6 +98,7 @@ h5{
   letter-spacing: 0.5px;
   text-align: center;
   text-decoration: none;
+  padding: 10px 30px; 
 }
 
 .service-box{
@@ -135,6 +140,9 @@ h5{
   list-style: none;
   padding: 40px 100px;
   margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer a {
@@ -156,12 +164,15 @@ h5{
 .nav-bar-ul {
   width: 1200px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .nav-bar-ul li {
   /* styles to be added here */
   list-style-type: none;
   text-align: center;
+
 }
 
 .container {
@@ -202,4 +213,42 @@ h5{
   border-bottom: solid 1px black;
   padding: 5px 10px;
   text-align: center;
+}
+
+#general-information{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#general-information .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 370px;
+}
+
+#structure > div {
+  /* these styles are for divs that are 
+   direct children of section with id structure */ 
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#team >div{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#team > div > article {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map-frame{
+  height: 375px;
+  width: 60%;
 }
