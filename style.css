@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700');
 
+
 html, body {
   margin: 0;
   padding: 0;
@@ -47,6 +48,8 @@ h5{
 
 .nav-bar {
   background: darkblue;
+  padding: 10px 0 15px; 
+
 }
 
 .nav-bar a {
@@ -62,6 +65,7 @@ h5{
   background-repeat: no-repeat;
   background-size: cover;
   height: 650px;
+  padding-top: 50px;
 }
 
 
@@ -79,6 +83,7 @@ h5{
   font-size: 2em;
   font-weight: 100;
   text-align: center;
+  margin: 20px 20px;
 }
 
 .link-btn {
@@ -94,6 +99,13 @@ h5{
 .service-box{
   font-size: 1.7em;
   text-align: center;
+  border: 2px solid #eee;
+  border-radius:  20px;
+  box-sizing: border-box;
+  box-shadow:  2px 2px 10px 0 #eee;
+  margin: 50px 5% 0 5%;
+  padding: 20px;
+  width: 40%;
 }
 
 .service-box img {
@@ -121,12 +133,14 @@ h5{
   font-size: 1.9em;
   text-align: center;
   list-style: none;
-  
+  padding: 40px 100px;
+  margin-bottom: 25px;
 }
 
 .footer a {
   color: blue;
   text-decoration: none;
+
 }
 
 .footer ul {
@@ -136,4 +150,56 @@ h5{
 .address{
   font-style: normal;
   font-size: 0.8em;
+  margin-bottom: 30px;
+}
+
+.nav-bar-ul {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-bar-ul li {
+  /* styles to be added here */
+  list-style-type: none;
+  text-align: center;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding 7px;
+} 
+
+.service-box h4{
+    margin: 0 0 0 15px;
+}
+
+#team {
+  padding: 75px 0;
+  margin: 0 auto;
+}
+
+#team p {
+    /* styles to be defined here */
+  width: 60%;  
+  margin: 10px auto;
+}
+
+#team hr {
+  /* styles to be defined here */
+  margin 20px auto 30px auto;
+  with: 40%;
+}
+
+
+.schedule-table{
+  margin: 0 auto 40px auto;
+  font-size: 1.5em;
+}
+
+.schedule-table th, td {
+    /* add styles here */
+  border-bottom: solid 1px black;
+  padding: 5px 10px;
+  text-align: center;
 }
